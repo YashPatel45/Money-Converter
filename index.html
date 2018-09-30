@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Money Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+    <style>
+            body{
+                font-family: Comic Sans MS;
+                 background-image: url(images/backimg.jpg);
+            }
+
+            h1{
+                margin: 35pt;
+            }
+
+            .div1 {
+                width: 530px;
+                height: 430px;
+                text-align: center;
+                border: 10px black solid;
+                background-color: #ffc744;
+                margin: auto;
+            }
+
+            .labelClass {
+                font-size: 18pt;
+            }
+
+            .inputClass1 {
+                margin-left: 45px;
+                width: 150px;
+                margin-bottom: 20px;
+                font-family: Comic Sans MS;
+            }
+
+            .inputClass2 {
+                margin-left: 68px;
+                width: 150px;
+                margin-bottom: 20px;
+                font-family: Comic Sans MS;
+            }
+
+            .inputClass3 {
+                margin-left: 75px;
+                width: 150px;
+                margin-bottom: 20px;
+                font-family: Comic Sans MS;
+            }
+
+            .select1{
+                width:150px;    
+                font-family: Comic Sans MS;
+                margin-left: 5px;
+                margin-bottom: 10px;
+            }
+            .select2{
+                width:90px;    
+                font-family: Comic Sans MS;
+                margin-left: 5px;
+            }
+
+            .submitButton {
+                font-family: Comic Sans MS;
+                font-size: 18px;
+                text-align: center;
+                margin-top: 20px;
+                height: 40px;
+                width: 150px;
+                color: red;
+                background-color: appworkspace;
+                border: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="logic.php" name="form" method="GET">
+            <div class="div1">
+                <h1>Money Converter!!!</h1>
+                <label class="labelClass" for="CA">Enter <strong>Starting</strong> Number</label>
+                <input class="inputClass1" type="text" name="box1" ><br>
+
+                <label class="labelClass" for="INR">Enter <strong>Ending</strong> Number</label>
+                <input class="inputClass2" type="text" name="box2" ><br>
+
+                <label class="labelClass" for="STEP">Enter a <strong>Step</strong> number</label>
+                <input class="inputClass3" type="text" name="box3" ><br>
+
+                <label for="FROM">Convert from</label>
+                <select class="select1"  name="d1" id="FROM" >
+                    <option name="d1" value="CA">Canadian $</option>
+                    <option name="d1" value="INR">Indian Rupee</option>
+                    <option name="d1" value="EURO">European Euro</option>
+                    <option name="d1" value="POUND">British Pound</option>
+                    <option name="d1" value="DINAR">Kauwaitian Dinar</option>
+                </select>&nbsp;&nbsp;&nbsp;
+
+                <label for="TO">Convert to</label>
+                <select class="select1"  name="d2" id="TO" >
+                    <option name="d2" value="DINAR">Kauwaitian Dinar</option>
+                    <option name="d2" value="POUND">British Pound</option>
+                    <option name="d2" value="EURO">European Euro</option>
+                    <option name="d2" value="INR">Indian Rupee</option>
+                    <option name="d2" value="CA">Canadian $</option>
+                   
+                </select>
+                <input class="submitButton" value="Convert" type="submit">
+            </div>
+        </form>
+    </body>
+</html>
+
+
