@@ -212,20 +212,6 @@ and open the template in the editor.
                 }echo "</table>";
                 exit();
         }
-
-        /*         * if ($f = "CA" && $t = "INR") {
-
-          echo "<table border=10><tr><th>CA</th><th>INR</th></tr>";
-          for ($x = $c; $x <= $i; $x = $x + $s) {
-          echo "<tr><td>$x</td><td>" . $x * 56 . "</td></tr>";
-          }echo "</table>";
-          } elseif ($f = "INR" && $t = "CA") {
-          echo "<table border=10><tr><th>INR</th><th>CA</th></tr>";
-          for ($y = $i; $y <= $c; $y = $y + $s) {
-          echo "<tr><td>$y</td><td>" . $y / 56 . "</td></tr>";
-          echo 'hello';
-          }echo "</table>";
-          } */
         ?>
     </body>
 </html>
